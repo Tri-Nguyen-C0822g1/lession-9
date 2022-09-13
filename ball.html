@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+<img id="myImage" src="http://t0.gstatic.com/licensed-image?q=tbn:ANd9GcSyYU6w-InSN_e8TTCZLjFN2b6xfuZ3T2V7royGbNvfmDzflZVG9J5eHmR_BC22rr2JGQbJcl-Xdlw4Vq2-r8k"style="width:250px">
+<p>Click the button below to move the ball to right</p>
+<button type="button" onclick="moveRight()">Click Me</button>
+</form>
+<script>
+    let img0bj = null;
+    img0bj = document.getElementById("myImage");
+    function init(){
+        img0bj = document.getElementById("myImage");
+        img0bj.style.position = 'relative';
+        img0bj.style.left = '0px';
+    }
+    function moveRight(){
+        img0bj.style.left = parseInt(img0bj.style.left) + 10 + 'px';
+    }
+    window.onload = init;
+
+</script>
+</body>
+</html>
